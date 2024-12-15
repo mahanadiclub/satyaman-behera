@@ -1,24 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mahanadi Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahanadi Club Membership</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            background-image: url('background.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;   
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
         header {
-            background-image: url('background.jpg');
-            background-size: 100% 100%;
-            background-attachment: fixed;
-            padding: 20px;
+            background-color: #ffffff;
+            color: #333;
             text-align: center;
+            padding: 1rem;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
         }
         nav {
-            background-color: cornflowerblue;
+            background-color: #4a90e2;
             padding: 10px 0;
         }
         nav ul {
@@ -26,68 +41,84 @@
             padding: 0;
             margin: 0;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
-            padding: 5px 10px;
-            
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f0f0f0;
         }
         .profile-section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            padding: 20px;
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
-            padding: 50px 0;
+            justify-content: space-around;
+            align-items: center;
         }
-
-        .profile-section img {
+        .profile-picture {
             width: 200px;
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #4a90e2;
         }
-        .profile-section .details {
-             max-width: 600px;
+        .member-details {
+            flex: 1;
+            min-width: 300px;
         }
-
-        .profile-section .details h2 {
-            color: #333;
-            font-size: 24px;
+        .member-details h2 {
+            color: #4a90e2;
             margin-bottom: 10px;
         }
-
-        .profile-section .details p {
-            color: #777;
-            font-size: 16px;
-            margin-bottom: 10px;
+        .member-details p {
+            margin: 5px 0;
+            color: #666;
         }
-        
+        .highlight {
+            font-weight: 600;
+            color: #4a90e2;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Meambership ID Card,Mahanadi Club, Sambalpur</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="https://script.google.com/macros/s/AKfycby75DJEbNykXmFWuO25FymE1fxqkVDhFEj-40Ep3mVcrFZWBTNZpkDqKiwCgKi5Cra8/exec" target="_blank">Available Balence</a></li>
-        </ul>
-    </nav>
-    <div class="profile-section">
-        <img src="profile_pic.jpg" alt="Profile Picture">
-        <div class="member-details">
-            <h2>SATYAMAN BEHERA<h2>
-            <p>Membership No:MC-L/592</p>
-            <p>Contact No.9437052052</p>
-            <p>Blood Group: A+</p>
-            <p>Date of Birth:1/7/1984</p>
-            <p>Date of Meambership: 16/03/2023</p>
-            <p>Valid upto:31/12/2024</p>
-            <p>Type of Meambership: LIFE </p>
-            <p>Address: AT- VIHAY BHAWAN, ADARSH MARG, SAMBALPUR</p>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Mahanadi Club Logo" class="logo">
+            <h1>Mahanadi Club Membership</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://script.google.com/macros/s/AKfycbxr5gkJ914RpYd9kBo2l5D6fL8rR4On2Z6HmNjKYseAh6QRKIwOZJAV4Y4dM-lR988K/exec" target="_blank">Check Balance</a></li>
+            </ul>
+        </nav>
+        <div class="profile-section">
+            <img src="profile_pic.jpeg" alt="behera" class="profile-picture">
+            <div class="member-details">
+                <h2>SATYAMAN BEHERA</h2>
+                <p><span class="highlight">Membership No:</span>MC-L/592</p>
+                <p><span class="highlight">Contact:</span> 9437052052</p>
+                <p><span class="highlight">Blood Group:</span> A +ve</p>
+                <p><span class="highlight">Date of Birth:</span> 01/07/1984</p>
+                <p><span class="highlight">Member Since:</span> 16/03/2023</p>
+                <p><span class="highlight">Valid Until:</span> <span style="color: blue;">31/12/2024</span></p>
+                <p><span class="highlight">Membership Type:</span> Life</p>
+                <p><span class="highlight">Address:</span> VIHAY BHAWAN, ADARSH MARG, SAMBALPUR</p>
+                <p><span class="highlight">E Mail:</span>N/A</p>
+
+            </div>
         </div>
     </div>
 </body>
